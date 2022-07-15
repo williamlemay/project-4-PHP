@@ -1,0 +1,51 @@
+<!--William Lemay, basic input form that takes user name, hours worked, and hourly rate. Completed 3/8/22-->
+<html>
+<head>
+      <style>
+         header{
+            font-size: 40px;
+         }
+      </style>
+   </head>
+<body>
+<?php include 'display_paycheck.php';?>
+<header><strong>Please enter employee info</strong></header>
+<br />
+<table>
+<form action="/display_paycheck.php" method="post">
+<tr>
+	<td>
+		First Name:
+	</td>
+	<td><input type="text" name="fname" /><br></td>
+</tr>
+<tr>
+	<td>
+		Last Name:
+	</td>
+	<td><input type="text" name="lname" /><br></td>
+</tr>
+<tr>
+	<td>
+		Weekly Hours Worked:
+	</td>
+	<td><input type="number" name="hours" /><br></td>
+</tr>
+<tr>
+	<td>
+		Hourly Rate $:
+	</td>
+	<td><input type="number" step=0.01 name="rate" /><br></td>
+</tr>
+
+<tr>
+	<td>
+		<input type="submit" />
+	</td>
+	<td>
+		<input type="reset" />
+	</td>
+</tr>
+</table>
+</head>
+</form>
